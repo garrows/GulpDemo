@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
-    browserify = require('gulp-browserify');
+    browserify = require('gulp-browserify'),
+    clean = require('gulp-clean')
+    bower = require('gulp-bower')
 
 var livereloadServer; 
 var livereload = function (_file) {
@@ -27,7 +29,18 @@ gulp.task('watch', function() {
     gulp.watch(['./app/**/*.js'], ['scripts']);
 });
 
+gulp.task('clean', function() {
+    gulp.src(['./build', './bower_components'], {read: false})
+        .pipe(clean());
+});
+
+gulp.task('bower', function() {
+    bower()
+        .pipe(gulp.dest('./bower_components/'))
+});
+
 gulp.task('default', [
+    'bower',
     'scripts',
     'watch'
 ]);

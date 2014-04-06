@@ -1,7 +1,11 @@
 {
   "name": "DemoGulp",
   "version": "0.0.0",
-  "description": "",
+  "description": "Demonstrate the awesomness of gulp",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/garrows/GulpDemo"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +18,8 @@
   "devDependencies": {
     "gulp": "^3.6.0",
     "gulp-browserify": "^0.5.0",
-    "gulp-livereload": "^1.2.0"
+    "gulp-livereload": "^1.2.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-bower": "0.0.4"
   }
 }
