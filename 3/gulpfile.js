@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     browserify = require('gulp-browserify'),
-    clean = require('gulp-clean')
+    clean = require('gulp-clean'),
     bower = require('gulp-bower')
 
 var livereloadServer; 
