@@ -25,8 +25,8 @@ gulp.task('four', ['three'], function() {
 });
 
 gulp.task('default', [
-    // 'one',
-    // 'two',
+    'one',
+    'two',
     'four'
 ]);
 
