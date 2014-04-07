@@ -30,7 +30,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function() {
-    gulp.src(['./build', './bower_components'], {read: false})
+    gulp.src(['./build', './bower_components', './node_modules'], {read: false})
         .pipe(clean());
 });
 
