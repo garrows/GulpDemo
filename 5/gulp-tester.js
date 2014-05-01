@@ -1,10 +1,10 @@
 var through = require('through2');
 
 module.exports = function(opt) {
-    
+
     opt.name = opt.name ? opt.name : "0";
     opt.timeout = opt.timeout ? opt.timeout : 1000;
-    
+
     console.log("Constructed: tester " + opt.name);
 
     function tester(file, encoding, callback) {

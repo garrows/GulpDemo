@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     minifyHTML = require('gulp-minify-html');
 
 
-var livereloadServer; 
+var livereloadServer;
 var livereload = function (_file) {
     return function (_path) {
         if (livereloadServer) livereloadServer.changed(_file);
@@ -17,7 +17,7 @@ var livereload = function (_file) {
 
 gulp.task('scripts', function() {
 
-    gulp.src(['./app/js/index.js'])
+    return gulp.src(['./app/js/index.js'])
         .pipe(browserify({
             debug : true,
             "fullPaths": true
@@ -30,7 +30,7 @@ gulp.task('scripts', function() {
 gulp.task('minifyHTML', function() {
     var opts = {comments:true,spare:true};
 
-    gulp.src('./app/html/*.html')
+    return gulp.src('./app/html/*.html')
         .pipe(minifyHTML(opts))
         .pipe(gulp.dest('./build/'))
         .on('end', livereload('.html'));
@@ -60,7 +60,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function() {
-    gulp.src(['./build', './bower_components'], {read: false})
+    return gulp.src(['./build', './bower_components'], {read: false})
         .pipe(clean());
 });
 
@@ -76,4 +76,3 @@ gulp.task('default', [
     'minifyHTML',
     'watch'
 ]);
-

@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 gulp.task('scripts', function() {
 
-    gulp.src(['./app/js/index.js'])
+    return gulp.src(['./app/js/index.js'])
         .pipe(browserify({
             debug : true,
             "fullPaths": true
@@ -15,4 +15,3 @@ gulp.task('scripts', function() {
 gulp.task('default', [
     'scripts'
 ]);
-

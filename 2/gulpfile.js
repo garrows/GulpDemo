@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     browserify = require('gulp-browserify');
 
-var livereloadServer; 
+var livereloadServer;
 var livereload = function (_file) {
     return function (_path) {
         if (livereloadServer) livereloadServer.changed(_file);
@@ -10,7 +10,7 @@ var livereload = function (_file) {
 
 gulp.task('scripts', function() {
 
-    gulp.src(['./app/js/index.js'])
+    return gulp.src(['./app/js/index.js'])
         .pipe(browserify({
             debug : true,
             "fullPaths": true
@@ -31,4 +31,3 @@ gulp.task('default', [
     'scripts',
     'watch'
 ]);
-
