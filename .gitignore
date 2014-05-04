@@ -2,3 +2,4 @@
 *bower_components*
 *build*
 *npm-debug.log*
+.DS_Store

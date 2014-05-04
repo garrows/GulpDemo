@@ -13,6 +13,7 @@
   "author": "Glen Arrowsmith",
   "license": "ISC",
   "dependencies": {
-    "thecatapi": "^1.0.0"
+    "thecatapi": "^1.0.0",
+    "cat-picture": "^5.0.2"
   }
 }
