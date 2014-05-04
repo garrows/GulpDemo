@@ -1,0 +1,18 @@
+{
+  "name": "CoolstackDemo",
+  "version": "0.0.0",
+  "description": "Demonstrate the coolstack",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/garrows/GulpDemo"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Glen Arrowsmith",
+  "license": "ISC",
+  "dependencies": {
+    "thecatapi": "^1.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "undef": true,
+    "unused": true,
+    "predef": [
+        "require",
+        "document",
+        "window"
+    ]
+}
