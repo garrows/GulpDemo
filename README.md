@@ -1,6 +1,8 @@
-GulpDemo
-========
+The Javascript CoolChain
+========================
 
-Demonstrate the awesomness of gulp
+The javascript coolchain is a collection of all the tools and tech that are 'cool'.
 
-Presentation slides found at https://slid.es/glenarrowsmith/gulp-js/
+This repository is a README journey setup initially for a Bris.js talk.
+
+[Step 1. Browserify](/1-Browserify/)
