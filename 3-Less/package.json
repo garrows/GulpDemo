@@ -1,0 +1,24 @@
+{
+  "name": "CoolstackDemo",
+  "version": "0.0.0",
+  "description": "Demonstrate the coolstack",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/garrows/GulpDemo"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Glen Arrowsmith",
+  "license": "ISC",
+  "dependencies": {
+    "thecatapi": "^1.0.0",
+    "gulp-livereload": "^1.3.1",
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-browserify": "^0.5.0",
+    "jshint-stylish": "^0.2.0",
+    "gulp-less": "^1.2.3"
+  }
+}
